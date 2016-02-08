@@ -5,8 +5,8 @@
 # dist
 core/static
 static
-data/repositories.json
-data/commit-activity
+data/*.json
+data/commit-activity/*.json
 
 # -------------------------------------------------
 # OS generated files
