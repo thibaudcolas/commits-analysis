@@ -57,3 +57,7 @@ const filteredRepos = _.filter(allRepos, { fork: false, private: false });
 ### 3. Processing
 
 Now we have the data and it's time to do something with it!
+
+```sh
+node processing.js
+```
