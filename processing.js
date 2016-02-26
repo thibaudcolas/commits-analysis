@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const fs = require('fs');
 
 const USER = 'ThibWeb';
 
@@ -40,6 +41,18 @@ const commitActivityArray = Object.keys(commitActivity).map((key) => {
     };
 });
 
-console.log(commitActivityArray);
-console.log(commitActivityArray.reduce((sum, week) => sum + week.value, 0));
-console.log(commitActivityArray.length);
+const result = _.chain(ownRepos)
+    .filter(repo => repo.totalActivity > 0)
+    .map(repo => _.pick(repo, ['full_name', 'commitActivity', 'totalActivity']))
+    .map(repo => _.assign(repo, {
+        commitActivity: repo.commitActivity.map(week => _.omit(week, 'days')),
+    }))
+    .value();
+
+console.log(result);
+console.log(result.length);
+
+// console.log(commitActivityArray.reduce((sum, week) => sum + week.value, 0));
+// console.log(commitActivityArray.length);
+
+fs.writeFileSync('./data/commit-activity.json', JSON.stringify(result, null, 4), 'utf-8');
