@@ -1,18 +1,18 @@
 {
   "name": "commits-analysis",
   "version": "1.0.0",
-  "description": "",
+  "description": "An analysis of code commits on GitHub over a year.",
   "main": "processing.js",
   "keywords": [],
   "author": "Thibaud Colas <thib@thib.me> (https://github.com/ThibWeb)",
   "license": "ISC",
   "dependencies": {
     "got": "^6.1.1",
-    "lodash": "^4.3.0"
+    "lodash": "^4.3.0",
+    "d3": "^3.5.15"
   },
   "devDependencies": {
     "browser-sync": "^2.11.1",
-    "d3": "^3.5.15"
   },
   "scripts": {
     "start": "browser-sync start --server --files charts/ --startPath charts/ --directory"
