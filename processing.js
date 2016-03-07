@@ -56,3 +56,4 @@ console.log(result.length);
 // console.log(commitActivityArray.length);
 
 fs.writeFileSync('./data/commit-activity.json', JSON.stringify(result, null, 4), 'utf-8');
+fs.writeFileSync('./data/commit-activity-weekly.json', JSON.stringify(commitActivityArray, null, 4), 'utf-8');
