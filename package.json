@@ -4,7 +4,7 @@
   "description": "An analysis of code commits on GitHub over a year.",
   "main": "processing.js",
   "keywords": [],
-  "author": "Thibaud Colas <thib@thib.me> (https://github.com/ThibWeb)",
+  "author": "Thibaud Colas <thib@thib.me> (https://github.com/thibaudcolas)",
   "license": "ISC",
   "dependencies": {
     "got": "^6.1.1",

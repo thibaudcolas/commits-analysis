@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const fs = require('fs');
 
-const USER = 'ThibWeb';
+const USER = 'thibaudcolas';
 
 const allRepos = require('./data/repositories.json');
 const filteredRepos = _.filter(allRepos, { fork: false, private: false });

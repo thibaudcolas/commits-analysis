@@ -47,7 +47,7 @@ node retrieve-stats.js
 The account to retrieve data for and the type of repository to get can be configured within `retrieve-stats.js`:
 
 ```js
-const USER = 'ThibWeb';
+const USER = 'thibaudcolas';
 const API_DOMAIN = 'https://api.github.com';
 
 const allRepos = require('./data/repositories.json');

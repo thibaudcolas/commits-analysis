@@ -2,7 +2,7 @@ const fs = require('fs');
 const _ = require('lodash');
 const got = require('got');
 
-const USER = 'ThibWeb';
+const USER = 'thibaudcolas';
 const API_DOMAIN = 'https://api.github.com';
 
 const allRepos = require('./data/repositories.json');
